@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SUITE FOR DEMO" verbose="1">
+
+    <test name="SpotifyLogin">
+        <parameter name="user" value="Gerardo Aragón"/>
+        <parameter name="username" value="gera187@hotmail.com"/>
+        <parameter name="password" value="3sm3r4ld4c40s"/>
+        <classes>
+            <class name="tests.LoginTests" >
+
+            </class>
+        </classes>
+    </test>
+    <!--
+ <test name="SearchSong">
+     <parameter name="songName" value="Nothing Else Matters"/>
+     <parameter name="artistName" value="Metallica"/>
+     <classes>
+         <class name="tests.SearchTests" >
+
+         </class>
+     </classes>
+
+ </test>
+  -->
+ <test name="CreatePlalist">
+     <parameter name="playlist" value="TestingAutomation"/>
+     <parameter name="username" value="gera187@hotmail.com"/>
+     <parameter name="password" value="3sm3r4ld4c40s"/>
+     <classes>
+         <class name="tests.PlaylistTests" >
+            </class>
+        </classes>
+    </test>
+</suite>

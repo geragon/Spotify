@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class Dashboard {
 
     private WebDriver driver;
-    private By userName = By.xpath("/html/body/div[3]/div/div[3]/div[1]/header/div[4]/button");
+    private By userName = By.xpath("//span[@data-testid=\"user-widget-name\"]");
 
     public Dashboard(WebDriver driver){
         this.driver = driver;

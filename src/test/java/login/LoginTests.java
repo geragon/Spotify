@@ -15,8 +15,8 @@ public class LoginTests extends BaseTests {
     public void testSuccessfulLogin(){
 
         LoginPage loginPage = homePage.clickLoginButton();
-        loginPage.setUsername("gera187@hotmail.com");
-        loginPage.setPassword("3sm3r4ld4c40s");
+        loginPage.setUsername("");
+        loginPage.setPassword("");
         Dashboard dashboard = loginPage.clickLoginButton();
         assertTrue(dashboard.getUserName().contains("Gerardo Aragón"),
                 "Login incorrecto");
